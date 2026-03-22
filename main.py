@@ -6,7 +6,7 @@ import os
 
 load_dotenv()
 
-client = genai.Client(api_key="AIzaSyBQc-SeqdX921kuNGAkzrwdiIjvGXOz-SI")
+client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 
 template = """You are an expert on the book "Alice in Wonderland."
 
